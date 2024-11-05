@@ -17,6 +17,10 @@ function WelcomePage() {
     // Replace 'your-url-here' with the actual URL you want to navigate to
     window.location.href = 'https://awesome-prince.github.io/DHS-Chatbot.github.io/';
   };
+   const handleLearnMore = () => {
+    // Replace 'your-learn-more-url-here' with the actual URL you want to navigate to
+    window.location.href = 'https://awesome-prince.github.io/DHS-Chatbot.github.io/#about';
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white text-blue-900">
@@ -75,6 +79,7 @@ function WelcomePage() {
               className="bg-white hover:bg-blue-100 text-blue-500 font-bold py-3 px-6 rounded-full border-2 border-blue-500 transition-all duration-300 transform hover:scale-105"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={handleLearnMore} // Added onClick for Learn More button
             >
               Learn More
             </motion.button>
