@@ -13,9 +13,9 @@ function WelcomePage() {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleStartChatting = () => {
-    document.getElementById('welcomePage').style.display = 'none';
-    document.getElementById('mainContent').classList.remove('hidden');
+   const handleStartChatting = () => {
+    // Replace 'your-url-here' with the actual URL you want to navigate to
+    window.location.href = 'https://awesome-prince.github.io/DHS-Chatbot.github.io/';
   };
 
   return (
